@@ -1,4 +1,4 @@
-baseurl: "example.com"
+baseurl: "https://drewkeefer.github.io/folio"
 languageCode: "en-us"
 theme: "terminal"
 pagination:
@@ -46,7 +46,7 @@ languages:
       logo:
         logoText: "Animation"
         logoSubtitle: "Selected studies and experiments in motion"
-        logoHomeLink: "/"
+        logoHomeLink: "/folio"
 
     menu:
       main:
