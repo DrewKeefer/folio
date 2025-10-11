@@ -1,0 +1,44 @@
+{{ $pageName := lower (replace .Page.File.BaseFileName " " "-") }}
+{{ $images := index (index .Site.Data "meta") $pageName "images" }}
+
+{{ if $images }}
+    {{ $sorted := sort $images "order" }}
+    <div class="image-grid-container">
+        <div class="selector-column">
+            {{ $firstProcessed := 0 }}
+            {{ range $index, $val := $sorted }}
+                {{ $imagePath := resources.Get (printf "./%s/%s" $pageName .file) }}
+                {{ $image := $imagePath.Process "webp"}}
+
+                {{ if not $index}}
+                    {{ $firstProcessed = $image }}
+                {{ end}}
+                <button 
+                    class="thumbnail-button"
+                    data-src="{{ $image.RelPermalink }}"
+                    onmouseenter="makeActive(this)"
+                    onfocus="makeActive(this)"
+                >
+                    {{ .title }}
+                </button>
+            {{ end }}
+        </div>
+        <div class="preview-column">
+            <img id="preview-image" src="{{ $firstProcessed.RelPermalink }}" alt="">
+        </div>
+    </div>
+
+{{ else }}
+  <p>No images found for "{{ $pageName }}"</p>
+{{ end }}
+
+<script>
+  const previewImage = document.getElementById("preview-image");
+
+  function makeActive(button) {
+    const src = button.getAttribute("data-src");
+    const altText = button.innerText;
+    previewImage.src = src;
+    previewImage.alt = altText;
+  };
+</script>

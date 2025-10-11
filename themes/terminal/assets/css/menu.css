@@ -3,6 +3,7 @@
   align-items: flex-start;
   justify-content: space-between;
   margin: 20px 1px;
+  border-bottom: 2px solid var(--accent)
 }
 
 .navigation-menu__inner {
@@ -75,6 +76,7 @@
 .menu__dropdown > li a {
   display: flex;
   padding: 5px;
+  word-break: normal !important;
 }
 
 .menu--mobile .menu__trigger {
