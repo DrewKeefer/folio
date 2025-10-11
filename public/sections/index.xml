@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sections on Folio</title>
+    <link>//localhost:1313/sections/</link>
+    <description>Recent content in Sections on Folio</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="//localhost:1313/sections/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Animation</title>
+      <link>//localhost:1313/sections/animation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/sections/animation/</guid>
+      <description>&lt;p&gt;This is the animation page&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;    &lt;div class=&#34;image-grid-container&#34;&gt;&#xD;&#xA;        &lt;div class=&#34;selector-column&#34;&gt;&#xD;&#xA;            &#xD;&#xA;            &#xD;&#xA;                &#xD;&#xA;                &#xD;&#xA;&#xD;&#xA;                &#xD;&#xA;                    &#xD;&#xA;                &#xD;&#xA;                &lt;button &#xD;&#xA;                    class=&#34;thumbnail-button&#34;&#xD;&#xA;                    data-src=&#34;//localhost:1313/animation/anim_01-01_hu_cb16dd9f51c63c5b.webp&#34;&#xD;&#xA;                    onmouseenter=&#34;makeActive(this)&#34;&#xD;&#xA;                    onfocus=&#34;makeActive(this)&#34;&#xD;&#xA;                &gt;&#xD;&#xA;                    Animation 01&#xD;&#xA;                &lt;/button&gt;&#xD;&#xA;            &#xD;&#xA;                &#xD;&#xA;                &#xD;&#xA;&#xD;&#xA;                &#xD;&#xA;                &lt;button &#xD;&#xA;                    class=&#34;thumbnail-button&#34;&#xD;&#xA;                    data-src=&#34;//localhost:1313/animation/anim_02-01_hu_f93e45336c0c96ca.webp&#34;&#xD;&#xA;                    onmouseenter=&#34;makeActive(this)&#34;&#xD;&#xA;                    onfocus=&#34;makeActive(this)&#34;&#xD;&#xA;                &gt;&#xD;&#xA;                    Animation Oh 2&#xD;&#xA;                &lt;/button&gt;&#xD;&#xA;            &#xD;&#xA;                &#xD;&#xA;                &#xD;&#xA;&#xD;&#xA;                &#xD;&#xA;                &lt;button &#xD;&#xA;                    class=&#34;thumbnail-button&#34;&#xD;&#xA;                    data-src=&#34;//localhost:1313/animation/aa03_hu_6f24fcca2b0a8ecc.webp&#34;&#xD;&#xA;                    onmouseenter=&#34;makeActive(this)&#34;&#xD;&#xA;                    onfocus=&#34;makeActive(this)&#34;&#xD;&#xA;                &gt;&#xD;&#xA;                    Anim 03&#xD;&#xA;                &lt;/button&gt;&#xD;&#xA;            &#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;        &lt;div class=&#34;preview-column&#34;&gt;&#xD;&#xA;            &lt;img id=&#34;preview-image&#34; src=&#34;//localhost:1313/animation/anim_01-01_hu_cb16dd9f51c63c5b.webp&#34; alt=&#34;&#34;&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;script&gt;&#xD;&#xA;  const previewImage = document.getElementById(&#34;preview-image&#34;);&#xD;&#xA;&#xD;&#xA;  function makeActive(button) {&#xD;&#xA;    const src = button.getAttribute(&#34;data-src&#34;);&#xD;&#xA;    const altText = button.innerText;&#xD;&#xA;    previewImage.src = src;&#xD;&#xA;    previewImage.alt = altText;&#xD;&#xA;  };&#xD;&#xA;&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>Digital Work</title>
+      <link>//localhost:1313/sections/digital/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/sections/digital/</guid>
+      <description>&lt;p&gt;This is the digital work page&lt;/p&gt;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;    &lt;div class=&#34;image-grid-container&#34;&gt;&#xD;&#xA;        &lt;div class=&#34;selector-column&#34;&gt;&#xD;&#xA;            &#xD;&#xA;            &#xD;&#xA;                &#xD;&#xA;                &#xD;&#xA;&#xD;&#xA;                &#xD;&#xA;                    &#xD;&#xA;                &#xD;&#xA;                &lt;button &#xD;&#xA;                    class=&#34;thumbnail-button&#34;&#xD;&#xA;                    data-src=&#34;//localhost:1313/digital/digit_01-01_hu_e1793cc8f5754ed9.webp&#34;&#xD;&#xA;                    onmouseenter=&#34;makeActive(this)&#34;&#xD;&#xA;                    onfocus=&#34;makeActive(this)&#34;&#xD;&#xA;                &gt;&#xD;&#xA;                    Digtal 01&#xD;&#xA;                &lt;/button&gt;&#xD;&#xA;            &#xD;&#xA;                &#xD;&#xA;                &#xD;&#xA;&#xD;&#xA;                &#xD;&#xA;                &lt;button &#xD;&#xA;                    class=&#34;thumbnail-button&#34;&#xD;&#xA;                    data-src=&#34;//localhost:1313/digital/digit_02-01_hu_b2c3e79de15bbf12.webp&#34;&#xD;&#xA;                    onmouseenter=&#34;makeActive(this)&#34;&#xD;&#xA;                    onfocus=&#34;makeActive(this)&#34;&#xD;&#xA;                &gt;&#xD;&#xA;                    Digit02&#xD;&#xA;                &lt;/button&gt;&#xD;&#xA;            &#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;        &lt;div class=&#34;preview-column&#34;&gt;&#xD;&#xA;            &lt;img id=&#34;preview-image&#34; src=&#34;//localhost:1313/digital/digit_01-01_hu_e1793cc8f5754ed9.webp&#34; alt=&#34;&#34;&gt;&#xD;&#xA;        &lt;/div&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&lt;script&gt;&#xD;&#xA;  const previewImage = document.getElementById(&#34;preview-image&#34;);&#xD;&#xA;&#xD;&#xA;  function makeActive(button) {&#xD;&#xA;    const src = button.getAttribute(&#34;data-src&#34;);&#xD;&#xA;    const altText = button.innerText;&#xD;&#xA;    previewImage.src = src;&#xD;&#xA;    previewImage.alt = altText;&#xD;&#xA;  };&#xD;&#xA;&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>Graphic Design</title>
+      <link>//localhost:1313/sections/graphics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/sections/graphics/</guid>
+      <description>&lt;p&gt;This is the graphic design page.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

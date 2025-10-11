@@ -1,0 +1,64 @@
+baseurl: "example.com"
+languageCode: "en-us"
+theme: "terminal"
+pagination:
+  pagerSize: 5
+
+ignoreLogs: ['warning-goldmark-raw-html']
+
+
+markup:
+  highlight:
+    noClasses: false
+
+params:
+  contentTypeName: "posts"
+  showMenuItems: 5
+  showLanguageSelector: false
+  fullWidthTheme: false
+  centerTheme: true
+  autoCover: true
+  showLastUpdated: false
+
+  twitter:
+    creator: ""
+    site: ""
+
+languages:
+  en:
+    languageName: "English"
+    title: "Folio"
+    params:
+      subtitle: "A simple, retro theme for Hugo"
+      owner: ""
+      keywords: ""
+      copyright: ""
+      menuMore: "Show more"
+      readMore: "Read more"
+      readOtherPosts: "Read other posts"
+      newerPosts: "Newer posts"
+      olderPosts: "Older posts"
+      missingContentMessage: "Page not found..."
+      missingBackButtonLabel: "Back to home page"
+      minuteReadingTime: "min read"
+      words: "words"
+
+      logo:
+        logoText: "Animation"
+        logoSubtitle: "Selected studies and experiments in motion"
+        logoHomeLink: "/"
+
+    menu:
+      main:
+        - identifier: "paintings"
+          name: "Paintings"
+          url: "/sections/paintings"
+        - identifier: "graphics"
+          name: "Graphic Design"
+          url: "/sections/graphics"
+        - identifier: "animation"
+          name: "Animation"
+          url: "/sections/animation"
+        - identifier: "digital"
+          name: "Digital Work"
+          url: "/sections/digital"

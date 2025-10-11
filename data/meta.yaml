@@ -1,0 +1,20 @@
+animation: 
+  images:
+    - file: "anim_01-01.png"
+      title: "Animation 01"
+      order: 1
+    - file: "aa03.png"
+      title: "Anim 03"
+      order: 3
+    - file: "anim_02-01.png"
+      title: "Animation Oh 2"
+      order: 2
+
+digital: 
+  images:
+    - file: "digit_01-01.png"
+      title: "Digtal 01"
+      order: 1
+    - file: "digit_02-01.png"
+      title: "Digit02"
+      order: 3
