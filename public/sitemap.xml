@@ -5,18 +5,20 @@
     <loc>http://localhost:1313/folio/about/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/folio/sections/digital/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/folio/</loc>
+    <lastmod>2019-01-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/folio/sections/</loc>
     <lastmod>2019-01-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/folio/sections/animation/</loc>
   </url><url>
     <loc>http://localhost:1313/folio/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/folio/sections/digital/</loc>
-  </url><url>
     <loc>http://localhost:1313/folio/sections/graphics/</loc>
-  </url><url>
-    <loc>http://localhost:1313/folio/sections/</loc>
   </url><url>
     <loc>http://localhost:1313/folio/tags/</loc>
   </url>

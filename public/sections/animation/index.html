@@ -7,7 +7,8 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="This is the animation page
-Animation 01Animation Oh 2Anim 03" />
+Loop Study 01Stop-Motion FormsHand-Drawn CyclesLoop Study 0130s loop — 3D spline extrusion, crisp lighting
+" />
 <meta name="keywords" content="" />
 
   <meta name="robots" content="noodp" />
@@ -37,7 +38,10 @@ Animation 01Animation Oh 2Anim 03" />
   <link rel="stylesheet" href="http://localhost:1313/folio/css/header.min.f46a27734f1d1af4081d4dcc6755ff8d16beaf42ca639d900f8f91ab282737e1.css">
 
   
-  <link rel="stylesheet" href="http://localhost:1313/folio/css/main.min.39689c3dbe2edeace96b3c91951321942a05df63104b933ad5fa52a22658ecd8.css">
+  <link rel="stylesheet" href="http://localhost:1313/folio/css/lightbox.min.b1333d41d75a9bde003657b6062ab76954078e49b5b36269ecd437053801678e.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/folio/css/main.min.ba8e6dfd4f71cc433f4874363320030c4740c8ea5236985f150cc640b9615382.css">
 
   
   <link rel="stylesheet" href="http://localhost:1313/folio/css/menu.min.0fa116b733656f76407780afa959b92ff75e062661972846c151c3600a1452ea.css">
@@ -80,7 +84,8 @@ Animation 01Animation Oh 2Anim 03" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Animation">
 <meta property="og:description" content="This is the animation page
-Animation 01Animation Oh 2Anim 03" />
+Loop Study 01Stop-Motion FormsHand-Drawn CyclesLoop Study 0130s loop — 3D spline extrusion, crisp lighting
+" />
 <meta property="og:url" content="http://localhost:1313/folio/sections/animation/" />
 <meta property="og:site_name" content="Folio" />
 
@@ -103,11 +108,11 @@ Animation 01Animation Oh 2Anim 03" />
 
 </head>
 <body>
+  
 
+  <div class="container center">
 
-<div class="container center">
-
-  <header class="header">
+    <header class="header">
   <div class="header__inner">
     <div class="header__logo">
       <a href="/folio">
@@ -177,8 +182,8 @@ Animation 01Animation Oh 2Anim 03" />
 </header>
 
 
-  <div class="content">
-    
+    <div class="content">
+      
 <article class="post">
   <h1 class="post-title">
     <a href="http://localhost:1313/folio/sections/animation/">Animation</a>
@@ -209,12 +214,14 @@ Animation 01Animation Oh 2Anim 03" />
                     
                 
                 <button 
-                    class="thumbnail-button"
-                    data-src="/folio/animation/anim_01-01_hu_cb16dd9f51c63c5b.webp"
+                    class="thumbnail-button gallery"
+                    data-src="/folio/animation/anim_01-01_hu_82afc56cabd40e20.png"
+                    data-title="Loop Study 01"
+                    data-caption="30s loop — 3D spline extrusion, crisp lighting"
                     onmouseenter="makeActive(this)"
                     onfocus="makeActive(this)"
                 >
-                    Animation 01
+                    Loop Study 01
                 </button>
             
                 
@@ -222,12 +229,14 @@ Animation 01Animation Oh 2Anim 03" />
 
                 
                 <button 
-                    class="thumbnail-button"
-                    data-src="/folio/animation/anim_02-01_hu_f93e45336c0c96ca.webp"
+                    class="thumbnail-button gallery"
+                    data-src="/folio/animation/anim_02-01_hu_20ec438abf565b39.png"
+                    data-title="Stop-Motion Forms"
+                    data-caption="clay morphing sequence with tactile textures"
                     onmouseenter="makeActive(this)"
                     onfocus="makeActive(this)"
                 >
-                    Animation Oh 2
+                    Stop-Motion Forms
                 </button>
             
                 
@@ -235,31 +244,50 @@ Animation 01Animation Oh 2Anim 03" />
 
                 
                 <button 
-                    class="thumbnail-button"
-                    data-src="/folio/animation/aa03_hu_6f24fcca2b0a8ecc.webp"
+                    class="thumbnail-button gallery"
+                    data-src="/folio/animation/aa03_hu_84a32d8c86ee24e0.png"
+                    data-title="Hand-Drawn Cycles"
+                    data-caption="12FPS Pencil-on-paper cycle, scanned and composited"
                     onmouseenter="makeActive(this)"
                     onfocus="makeActive(this)"
                 >
-                    Anim 03
+                    Hand-Drawn Cycles
                 </button>
             
         </div>
         <div class="preview-column">
-            <img id="preview-image" src="/folio/animation/anim_01-01_hu_cb16dd9f51c63c5b.webp" alt="">
+            
+            
+            <a id ="preview-link" class = "lightbox-image gallery" href= "/folio/animation/anim_01-01.png">
+                <img id="preview-image" src="/folio/animation/anim_01-01_hu_82afc56cabd40e20.png" alt="">
+            </a>
+            <div class="preview-text">
+                <h2 id="preview-title"> Loop Study 01<a href="#preview-title" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+                <p id="preview-caption"> 30s loop — 3D spline extrusion, crisp lighting</p>
+            </div> 
         </div>
     </div>
 
 
 
 <script>
-  const previewImage = document.getElementById("preview-image");
+    const previewLink = document.getElementById("preview-link")
+    const previewImage = document.getElementById("preview-image");
+    const previewTitle = document.getElementById("preview-title")
+    const previewCaption = document.getElementById("preview-caption")
 
-  function makeActive(button) {
-    const src = button.getAttribute("data-src");
-    const altText = button.innerText;
-    previewImage.src = src;
-    previewImage.alt = altText;
-  };
+    function makeActive(button) {
+        const src = button.getAttribute("data-src");
+        const title = button.getAttribute("data-title");
+        const caption = button.getAttribute("data-caption");
+
+        previewLink.href = src;
+        previewLink.title = title;
+        previewImage.src = src;
+        previewImage.alt = title;
+        previewTitle.innerText = title;
+        previewCaption.innerText = caption;
+    };
 </script>
 
       </div></div>
@@ -272,10 +300,10 @@ Animation 01Animation Oh 2Anim 03" />
   
 </article>
 
-  </div>
+    </div>
 
-  
-    <footer class="footer">
+    
+      <footer class="footer">
   <div class="footer__inner">
     
       <div class="copyright">
@@ -291,14 +319,15 @@ Animation 01Animation Oh 2Anim 03" />
 
 
 
+
 <script type="text/javascript" src="/folio/bundle.min.js"></script>
+<script type="text/javascript" src="/folio/js/lightbox.js"></script>
 
 
 
 
 
-  
-</div>
-
+    
+  </div>
 </body>
 </html>

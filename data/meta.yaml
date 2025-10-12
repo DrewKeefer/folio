@@ -1,20 +1,25 @@
 animation: 
   images:
     - file: "anim_01-01.png"
-      title: "Animation 01"
+      title: "Loop Study 01"
+      caption: "30s loop — 3D spline extrusion, crisp lighting"
       order: 1
     - file: "aa03.png"
-      title: "Anim 03"
+      title: "Hand-Drawn Cycles"
       order: 3
+      caption: "12FPS Pencil-on-paper cycle, scanned and composited"
     - file: "anim_02-01.png"
-      title: "Animation Oh 2"
+      title: "Stop-Motion Forms"
       order: 2
+      caption: "clay morphing sequence with tactile textures"
 
 digital: 
   images:
     - file: "digit_01-01.png"
-      title: "Digtal 01"
+      title: "Geometric MoGraph"
       order: 1
+      caption: "procedural motion graphics with hard cuts"
     - file: "digit_02-01.png"
-      title: "Digit02"
+      title: "Glitch Experiments"
       order: 3
+      caption: "Datamosh passes, temporal tearing"

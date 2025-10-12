@@ -8,14 +8,16 @@
             {{ $firstProcessed := 0 }}
             {{ range $index, $val := $sorted }}
                 {{ $imagePath := resources.Get (printf "./%s/%s" $pageName .file) }}
-                {{ $image := $imagePath.Process "webp"}}
+                {{ $image := $imagePath.Process "png"}}
 
                 {{ if not $index}}
                     {{ $firstProcessed = $image }}
                 {{ end}}
                 <button 
-                    class="thumbnail-button"
+                    class="thumbnail-button gallery"
                     data-src="{{ $image.RelPermalink }}"
+                    data-title="{{ .title }}"
+                    data-caption="{{ .caption }}"
                     onmouseenter="makeActive(this)"
                     onfocus="makeActive(this)"
                 >
@@ -24,7 +26,15 @@
             {{ end }}
         </div>
         <div class="preview-column">
-            <img id="preview-image" src="{{ $firstProcessed.RelPermalink }}" alt="">
+            {{ $firstImage := (index $sorted 0)}}
+            {{ $firstImagePath := resources.Get (printf "./%s/%s" $pageName $firstImage.file) }}
+            <a id ="preview-link" class = "lightbox-image gallery" href= "{{ $firstImagePath.RelPermalink }}">
+                <img id="preview-image" src="{{ $firstProcessed.RelPermalink }}" alt="">
+            </a>
+            <div class="preview-text">
+                <h2 id="preview-title"> {{$firstImage.title}}</h2>
+                <p id="preview-caption"> {{$firstImage.caption}}</p>
+            </div> 
         </div>
     </div>
 
@@ -33,12 +43,21 @@
 {{ end }}
 
 <script>
-  const previewImage = document.getElementById("preview-image");
+    const previewLink = document.getElementById("preview-link")
+    const previewImage = document.getElementById("preview-image");
+    const previewTitle = document.getElementById("preview-title")
+    const previewCaption = document.getElementById("preview-caption")
 
-  function makeActive(button) {
-    const src = button.getAttribute("data-src");
-    const altText = button.innerText;
-    previewImage.src = src;
-    previewImage.alt = altText;
-  };
+    function makeActive(button) {
+        const src = button.getAttribute("data-src");
+        const title = button.getAttribute("data-title");
+        const caption = button.getAttribute("data-caption");
+
+        previewLink.href = src;
+        previewLink.title = title;
+        previewImage.src = src;
+        previewImage.alt = title;
+        previewTitle.innerText = title;
+        previewCaption.innerText = caption;
+    };
 </script>

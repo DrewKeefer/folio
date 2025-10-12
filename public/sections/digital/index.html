@@ -7,7 +7,8 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="This is the digital work page
-Digtal 01Digit02" />
+Geometric MoGraphGlitch ExperimentsGeometric MoGraphprocedural motion graphics with hard cuts
+" />
 <meta name="keywords" content="" />
 
   <meta name="robots" content="noodp" />
@@ -37,7 +38,10 @@ Digtal 01Digit02" />
   <link rel="stylesheet" href="http://localhost:1313/folio/css/header.min.f46a27734f1d1af4081d4dcc6755ff8d16beaf42ca639d900f8f91ab282737e1.css">
 
   
-  <link rel="stylesheet" href="http://localhost:1313/folio/css/main.min.39689c3dbe2edeace96b3c91951321942a05df63104b933ad5fa52a22658ecd8.css">
+  <link rel="stylesheet" href="http://localhost:1313/folio/css/lightbox.min.b1333d41d75a9bde003657b6062ab76954078e49b5b36269ecd437053801678e.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/folio/css/main.min.ba8e6dfd4f71cc433f4874363320030c4740c8ea5236985f150cc640b9615382.css">
 
   
   <link rel="stylesheet" href="http://localhost:1313/folio/css/menu.min.0fa116b733656f76407780afa959b92ff75e062661972846c151c3600a1452ea.css">
@@ -72,7 +76,7 @@ Digtal 01Digit02" />
   
     <meta name="twitter:site" content="" />
   
-    <meta name="twitter:creator" content="" />
+    <meta name="twitter:creator" content="Lorem Ipsum" />
 
 
 
@@ -80,7 +84,8 @@ Digtal 01Digit02" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Digital Work">
 <meta property="og:description" content="This is the digital work page
-Digtal 01Digit02" />
+Geometric MoGraphGlitch ExperimentsGeometric MoGraphprocedural motion graphics with hard cuts
+" />
 <meta property="og:url" content="http://localhost:1313/folio/sections/digital/" />
 <meta property="og:site_name" content="Folio" />
 
@@ -89,6 +94,8 @@ Digtal 01Digit02" />
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="627">
 
+
+  <meta property="article:published_time" content="2019-01-25 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -103,11 +110,11 @@ Digtal 01Digit02" />
 
 </head>
 <body>
+  
 
+  <div class="container center">
 
-<div class="container center">
-
-  <header class="header">
+    <header class="header">
   <div class="header__inner">
     <div class="header__logo">
       <a href="/folio">
@@ -177,13 +184,13 @@ Digtal 01Digit02" />
 </header>
 
 
-  <div class="content">
-    
+    <div class="content">
+      
 <article class="post">
   <h1 class="post-title">
     <a href="http://localhost:1313/folio/sections/digital/">Digital Work</a>
   </h1>
-  <div class="post-meta"></div>
+  <div class="post-meta"><time class="post-date">2019-01-25</time><span class="post-author">Lorem Ipsum</span></div>
 
   
   
@@ -209,12 +216,14 @@ Digtal 01Digit02" />
                     
                 
                 <button 
-                    class="thumbnail-button"
-                    data-src="/folio/digital/digit_01-01_hu_e1793cc8f5754ed9.webp"
+                    class="thumbnail-button gallery"
+                    data-src="/folio/digital/digit_01-01_hu_6cde8c65223691b7.png"
+                    data-title="Geometric MoGraph"
+                    data-caption="procedural motion graphics with hard cuts"
                     onmouseenter="makeActive(this)"
                     onfocus="makeActive(this)"
                 >
-                    Digtal 01
+                    Geometric MoGraph
                 </button>
             
                 
@@ -222,31 +231,50 @@ Digtal 01Digit02" />
 
                 
                 <button 
-                    class="thumbnail-button"
-                    data-src="/folio/digital/digit_02-01_hu_b2c3e79de15bbf12.webp"
+                    class="thumbnail-button gallery"
+                    data-src="/folio/digital/digit_02-01_hu_8788f8263524498e.png"
+                    data-title="Glitch Experiments"
+                    data-caption="Datamosh passes, temporal tearing"
                     onmouseenter="makeActive(this)"
                     onfocus="makeActive(this)"
                 >
-                    Digit02
+                    Glitch Experiments
                 </button>
             
         </div>
         <div class="preview-column">
-            <img id="preview-image" src="/folio/digital/digit_01-01_hu_e1793cc8f5754ed9.webp" alt="">
+            
+            
+            <a id ="preview-link" class = "lightbox-image gallery" href= "/folio/digital/digit_01-01.png">
+                <img id="preview-image" src="/folio/digital/digit_01-01_hu_6cde8c65223691b7.png" alt="">
+            </a>
+            <div class="preview-text">
+                <h2 id="preview-title"> Geometric MoGraph<a href="#preview-title" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+                <p id="preview-caption"> procedural motion graphics with hard cuts</p>
+            </div> 
         </div>
     </div>
 
 
 
 <script>
-  const previewImage = document.getElementById("preview-image");
+    const previewLink = document.getElementById("preview-link")
+    const previewImage = document.getElementById("preview-image");
+    const previewTitle = document.getElementById("preview-title")
+    const previewCaption = document.getElementById("preview-caption")
 
-  function makeActive(button) {
-    const src = button.getAttribute("data-src");
-    const altText = button.innerText;
-    previewImage.src = src;
-    previewImage.alt = altText;
-  };
+    function makeActive(button) {
+        const src = button.getAttribute("data-src");
+        const title = button.getAttribute("data-title");
+        const caption = button.getAttribute("data-caption");
+
+        previewLink.href = src;
+        previewLink.title = title;
+        previewImage.src = src;
+        previewImage.alt = title;
+        previewTitle.innerText = title;
+        previewCaption.innerText = caption;
+    };
 </script>
 
       </div></div>
@@ -259,10 +287,10 @@ Digtal 01Digit02" />
   
 </article>
 
-  </div>
+    </div>
 
-  
-    <footer class="footer">
+    
+      <footer class="footer">
   <div class="footer__inner">
     
       <div class="copyright">
@@ -278,14 +306,15 @@ Digtal 01Digit02" />
 
 
 
+
 <script type="text/javascript" src="/folio/bundle.min.js"></script>
+<script type="text/javascript" src="/folio/js/lightbox.js"></script>
 
 
 
 
 
-  
-</div>
-
+    
+  </div>
 </body>
 </html>

@@ -528,7 +528,46 @@ iframe[src*="youtube.com"] {
   gap: 1rem;
 }
 
+@media (max-width: 684px) {
+  .image-grid-container{
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+}
+
 .selector-column{
   display: flex;
   flex-direction: column;
 }
+
+.thumbnail-button{
+  border: 1px solid var(--accent);
+  justify-content: start;
+  padding: 1.5rem 1rem;
+  font-weight: normal;
+}
+
+.preview-column{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--accent);
+  padding: 1rem;
+}
+
+#preview-image{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  width: 100%;
+  height: clamp(25vh, 50vh, 50vh);
+  object-fit: cover;
+}
+
+.preview-text{
+  border-top: 1px solid var(--accent);
+  margin-top: 1rem;
+}
+
+#preview-caption{
+  text-transform: uppercase;
+}
+

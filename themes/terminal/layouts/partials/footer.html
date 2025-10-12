@@ -14,10 +14,12 @@
 
 {{ $menu := resources.Get "js/menu.js" | js.Build }}
 {{ $cp := resources.Get "js/code.js" | js.Build }}
+{{ $lightbox := resources.Get "js/lightbox.js" | js.Build }}
 
 {{ $bundle := slice $menu $cp | resources.Concat "bundle.js" | resources.Minify }}
 
 <script type="text/javascript" src="{{ $bundle.RelPermalink }}"></script>
+<script type="text/javascript" src="{{ $lightbox.RelPermalink }}"></script>
 
 <!-- Extended footer section-->
 {{ partial "extended_footer.html" . }}
