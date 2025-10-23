@@ -1,28 +1,27 @@
 .navigation-menu {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 20px 1px;
-  border-bottom: 2px solid var(--accent)
+  width: 100%;
+  position: sticky;
+  top: 0
 }
 
 .navigation-menu__inner {
   display: flex;
-  flex: 1;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 1rem 0;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .navigation-menu__inner > li {
   flex: 0 0 auto;
-  margin-bottom: 10px;
   white-space: nowrap;
 }
 
-.navigation-menu__inner > li:not(:last-of-type) {
-  margin-right: 20px;
+.navigation-menu__inner > li > a{
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .navigation-menu .spacer {

@@ -93,3 +93,13 @@ transform-origin: 50% 50%;
     -ms-user-select: none;      
     user-select: none;
 }
+
+/* Custom Lightbox */
+
+#next, #prev {
+    font-family: "Inter";
+}
+
+.gallery > .img > img{
+    margin: 0;
+}

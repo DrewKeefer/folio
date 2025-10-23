@@ -47,7 +47,7 @@
   margin-top: 0 !important;
   margin-bottom: 15px !important;
   padding-bottom: 15px;
-  border-bottom: 3px dotted var(--accent);
+  border-bottom: none;
   text-decoration: none !important;
 }
 
@@ -55,7 +55,7 @@
   content: "";
   position: absolute;
   bottom: 2px;
-  display: block;
+  display: none;
   width: 100%;
   border-bottom: 3px dotted var(--accent);
 }
@@ -85,13 +85,6 @@
 
 .post ul {
   list-style: none;
-}
-
-.post ul li:not(:empty)::before {
-  content: "-";
-  position: absolute;
-  left: -20px;
-  color: var(--accent);
 }
 
 .post--regulation h1 {
