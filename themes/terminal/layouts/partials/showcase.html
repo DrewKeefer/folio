@@ -1,0 +1,16 @@
+{{- $inner := . -}}
+
+{{ $inner = markdownify $inner }}
+{{ $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 }}
+{{ $inner = replace $inner $image "" 1 }}
+
+<section class="showcase">
+    <div class="showcase-container">
+        <div class="image">
+            <div>{{- $image | safeHTML -}}</div>
+        </div>
+        <div class="text">
+            <div>{{ $inner | safeHTML }}</div>
+        </div>
+    </div>
+</section>

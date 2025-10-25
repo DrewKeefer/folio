@@ -1,6 +1,6 @@
 animation: 
   images:
-    - file: "anim_01-01.png"
+    - file: "loopstudy.png"
       title: "Loop Study 01"
       caption: "30s loop — 3D spline extrusion, crisp lighting"
       order: 1
