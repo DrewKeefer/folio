@@ -29,7 +29,7 @@ languages:
     languageName: "English"
     title: "Owen Keefer"
     params:
-      subtitle: "A simple, retro theme for Hugo"
+      subtitle: "Portfolio site for Owen Keefer"
       owner: ""
       keywords: ""
       copyright: ""

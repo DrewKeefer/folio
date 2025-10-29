@@ -16,7 +16,6 @@
 {{- $inner := .content -}}
 
 {{ $link := .link | default "" }}
-{{ warnf "DEBUG: %s" $link}}
 
 {{ $inner = markdownify $inner }}
 {{ $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 }}
