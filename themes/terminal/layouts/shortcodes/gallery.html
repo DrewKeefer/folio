@@ -25,7 +25,7 @@
     {{- end -}}
 
     <li class="{{ $class }}">
-      <a href="{{ ($image.Fit "1600x1600 Center q50").Permalink }}">
+      <a href="{{ ($image.Fit "1600x1600 Center q50").Permalink }}" data-src="{{ $image.Permalink}}">
         <img src="{{ ($image.Fill $resizeParam).Permalink }}" alt="Image {{ $imagetitle }}" />
       </a>
     </li>

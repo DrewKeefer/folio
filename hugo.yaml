@@ -27,7 +27,7 @@ params:
 languages:
   en:
     languageName: "English"
-    title: "Folio"
+    title: "Owen Keefer"
     params:
       subtitle: "A simple, retro theme for Hugo"
       owner: ""

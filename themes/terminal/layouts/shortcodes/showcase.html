@@ -1,1 +1,6 @@
-{{- partial "showcase.html" .Inner -}}
+{{ $params := dict 
+    "link" (.Get "link")
+    "content" .Inner
+}}
+
+{{- partial "showcase.html" $params -}}

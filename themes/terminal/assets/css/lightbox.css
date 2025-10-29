@@ -103,3 +103,19 @@ transform-origin: 50% 50%;
 .gallery > .img > img{
     margin: 0;
 }
+
+#open_image {
+    height:50px;
+    line-height:36px;
+    display: block;
+    margin-top:-25px;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    padding:0 15px;
+    cursor:pointer;
+    text-decoration:none;
+    z-index:99;
+    color:#fff;
+    font-size: 50px;
+}
